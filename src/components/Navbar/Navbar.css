@@ -1,0 +1,242 @@
+/* General Navbar Styles */
+.navbar {
+    padding: 15px 30px; /* Adjusted padding for a more compact and balanced look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Light background to contrast with bold colors */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Smooth rounded corners for a modern look */
+  }
+  
+  .logo {
+    font-family: 'Poppins', sans-serif; /* Modern font for the logo */
+    font-weight: 700; /* Bold logo for brand visibility */
+    font-size: 2rem; /* Larger logo size */
+    color: #f44336; /* Bright red for the logo (common in food delivery apps) */
+    text-transform: uppercase; /* Makes the brand name stand out */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #d32f2f; /* Darker red when hovered */
+  }
+  
+  /* Navbar Menu (Main Links) */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    color: #49557e;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .navbar-menu li {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-menu li:hover {
+    color: #f44336; /* Red hover effect for menu items */
+    transform: scale(1.1); /* Slight scale effect on hover */
+  }
+  
+  .navbar-menu .active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #f44336; /* Active link has a thicker underline */
+  }
+  
+  /* Navbar Right (Buttons, Search, Cart) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .navbar-right button {
+    background: #f44336; /* Red background for buttons */
+    color: white;
+    font-size: 16px;
+    font-weight: bold; /* Bold text on buttons */
+    padding: 10px 25px;
+    border-radius: 30px; /* Rounded corners for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .navbar-right button:hover {
+    background-color: #e53935; /* Darker red on hover */
+  }
+  
+  .navbar-search {
+    position: relative;
+  }
+  
+  .navbar-search .search-toggle {
+    width: 24px; /* Slightly larger search icon */
+    cursor: pointer;
+  }
+  
+  .navbar-search .search-box {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 250px;
+  }
+  
+  .navbar-search .search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  .navbar-search .search-button {
+    border: none;
+    background-color: #4caf50; /* Green for the search button */
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-search .search-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+  }
+  
+ /* Cart Icon */
+.navbar-cart {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar-cart img {
+    width: 30px; /* Standard cart icon size */
+  }
+  
+  .navbar-cart .dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 12px;
+    height: 12px;
+    background-color: #ff6600f3; /* Orange dot for notifications */
+    border-radius: 50%;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+  }
+  .navbar button {
+    padding: 12px 30px; /* Generous padding for a clean look */
+    font-size: 16px; /* Font size for readability */
+    background-color: #ff5722; /* A bold, warm color (can be changed as needed) */
+    color: white; /* White text for high contrast */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded button for a modern feel */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    font-weight: 500; /* Slightly bold text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow to give the button some depth */
+  }
+  
+  .navbar button:hover {
+    background-color: #e64a19; /* Slightly darker color on hover for interactivity */
+    transform: translateY(-4px); /* Button appears to rise when hovered */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow for hover */
+  }
+  
+  .navbar button:active {
+    transform: translateY(2px); /* Button "presses" down on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow for active state */
+  }
+  
+  .navbar button:focus {
+    outline: none; /* Remove the default focus outline */
+    border: 2px solid #ff5722; /* Add a custom border on focus */
+  }
+  
+  
+  
+  
+ /* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.6rem; /* Slightly smaller logo */
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 25px;
+  }
+
+  .navbar-right img {
+    width: 24px;
+  }
+
+  .navbar-right button {
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px; /* Smaller padding for very small screens */
+  }
+
+  .logo {
+    font-size: 1.4rem; /* Even smaller logo */
+  }
+
+  .navbar-menu {
+    gap: 10px;
+    font-size: 12px; /* Smaller font size for better fit */
+    display: none; /* Hide the menu on very small screens */
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .navbar-cart img {
+    width: 28px; /* Slightly smaller cart icon */
+  }
+
+  .navbar-right button {
+    padding: 5px 15px; /* Smaller button padding */
+  }
+
+  .navbar-search .search-button {
+    padding: 8px 15px; /* Smaller padding for search button */
+    font-size: 12px; /* Adjust font size of the button */
+  }
+
+  .navbar-search .search-input {
+    font-size: 0.9rem; /* Smaller font size */
+    padding: 0.1rem 0.4rem; /* Reduced padding for a more compact input */
+  }
+}

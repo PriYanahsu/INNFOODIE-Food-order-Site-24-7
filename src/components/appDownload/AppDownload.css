@@ -1,0 +1,48 @@
+.app-download {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 3rem;
+    background-color: #f1f3f5; /* Soft background for a clean and inviting look */
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .download-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* Slightly larger text for prominence */
+    font-weight: 600; /* Slightly bold to make it stand out */
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize; /* Capitalize the first letter for emphasis */
+  }
+  
+  .download-text .highlight {
+    font-weight: 700;
+    color: rgb(7, 112, 39); /* Green color for freshness */
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .download-text .highlight:hover {
+    color: rgb(255, 69, 69); /* Hover color changes to red */
+    text-decoration: none;
+  }
+  
+  .app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .app-store-logo {
+    width: 160px; /* Resize logos for consistency */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .app-store-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    filter: brightness(1.2); /* Slight brightness increase on hover */
+  }
+  

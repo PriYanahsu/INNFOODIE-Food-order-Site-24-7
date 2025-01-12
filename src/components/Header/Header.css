@@ -1,0 +1,64 @@
+.header {
+    width: 100%; /* Full width of the screen */
+    height: 34vw; /* Maintain proportional height */
+    margin: 30px 0; /* Adjust spacing for consistency */
+    background: url('/header_img.png') no-repeat center center; /* Center the image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    position: relative; /* Allows positioning of child elements like .header-contents */
+    border-radius: 10px;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;      /* in index.css @fadeIn */
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+
+.header-contents button{
+    border: none;
+    color: rgb(7, 112, 39);
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    .header {
+        height: 50vw; /* Increases height for smaller screens */
+    }
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
+

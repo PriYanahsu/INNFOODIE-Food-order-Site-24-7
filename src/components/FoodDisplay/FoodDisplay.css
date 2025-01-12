@@ -1,0 +1,31 @@
+.Food-display {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .Food-display h2 {
+    font-family: 'Poppins', sans-serif;  /* Clean and modern font */
+    font-size: 2.5rem; /* Adjust size for prominence */
+    font-weight: 700;  /* Bold for emphasis */
+    color: rgb(7, 112, 39); /* Green color for freshness */
+    text-transform: uppercase; /* Adds emphasis */
+    letter-spacing: 2px; /* Slight space between letters for a clean look */
+    line-height: 1.4; /* Makes the text more readable */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: color 0.3s ease;
+  }
+  
+  .Food-display h2:hover {
+    color: rgb(255, 69, 69); /* Changes color on hover for a dynamic effect */
+    text-shadow: 2px 2px 10px rgba(255, 69, 69, 0.5); /* Enhanced shadow on hover */
+  }
+  
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}

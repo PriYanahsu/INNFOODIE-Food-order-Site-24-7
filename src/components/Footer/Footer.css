@@ -1,0 +1,203 @@
+.footer {
+  background: linear-gradient(135deg, #333, #555); /* Dark gradient for a rich, elegant background */
+  padding: 4rem 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff; /* White text for contrast */
+  position: relative; /* Ensure that content overlaps with gradient */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); /* Slight shadow to add depth */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff; /* White logo */
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc; /* Lighter grey for text */
+  margin-bottom: 1.5rem;
+}
+
+.footer-social-icon img {
+  width: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-social-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  filter: brightness(1.2); /* Brighten icons on hover */
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f5a623; /* Vibrant food-related accent color */
+  margin-bottom: 1rem;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-content-center ul li,
+.footer-content-right ul li {
+  font-size: 1rem;
+  color: #fff; /* White text for the links */
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-content-center ul li:hover,
+.footer-content-right ul li:hover {
+  color: #f5a623; /* Bright accent color on hover */
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #444; /* Dark separator line */
+  margin: 2rem 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa; /* Lighter grey for the copyright */
+  padding-bottom: 1rem;
+}
+
+.footer-copyright a {
+  color: #f5a623; /* Accent color for links */
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Add a pattern to the background for extra texture */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('path/to/your/texture.png') repeat; /* Replace with a subtle food texture pattern */
+  opacity: 0.1; /* Light texture effect */
+  pointer-events: none;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 2rem; /* Reduce gap between sections */
+    padding: 0 1rem; /* Reduce side padding */
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    flex: none; /* Prevent sections from stretching unevenly */
+    text-align: center; /* Center-align content */
+  }
+
+  .logo {
+    font-size: 2rem; /* Slightly smaller logo size */
+    margin-bottom: 1rem;
+  }
+
+  .footer-description {
+    font-size: 0.9rem; /* Reduce text size */
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .footer-social-icon img {
+    width: 25px; /* Smaller icons for mobile */
+    margin-right: 10px;
+  }
+
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 1.4rem; /* Smaller heading size */
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    font-size: 0.9rem; /* Smaller font for list items */
+    margin-bottom: 0.6rem;
+  }
+
+  hr {
+    margin: 1.5rem 0; /* Reduce space around the separator */
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem; /* Smaller copyright text */
+    padding-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    gap: 1.5rem; /* Further reduce spacing */
+  }
+
+  .logo {
+    font-size: 1.8rem; /* Smaller logo */
+  }
+
+  .footer-description {
+    font-size: 0.85rem; /* Reduce text size further */
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-social-icon img {
+    width: 20px; /* Even smaller icons */
+    margin-right: 8px;
+  }
+
+  .footer-content-center h2,
+  .footer-content-right h2 {
+    font-size: 1.2rem; /* Smaller headings */
+  }
+
+  .footer-content-center ul li,
+  .footer-content-right ul li {
+    font-size: 0.85rem; /* Adjust font size for better fit */
+    margin-bottom: 0.5rem;
+  }
+
+  hr {
+    margin: 1rem 0; /* Compact separator spacing */
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem; /* Smallest text size */
+  }
+}

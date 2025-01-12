@@ -1,0 +1,163 @@
+.explore-menu {
+    text-align: center;
+    margin: 3rem 0; /* Increased margin for spacing */
+  }
+  
+  .explore-menu h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem; /* Increased size for better prominence */
+    font-weight: 700;
+    color: rgb(7, 112, 39);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px; /* Increased spacing for a clean look */
+    text-transform: uppercase; /* Adds emphasis */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for better readability */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .explore-menu h1:hover {
+    color: rgb(255, 69, 69); /* Subtle color change on hover */
+    text-shadow: 2px 2px 12px rgba(255, 69, 69, 0.5); /* Stronger shadow on hover */
+  }
+  
+  .explore-menu-text {
+    font-size: 1.3rem; /* Slightly larger font size for readability */
+    color: #555;
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 300;
+    transition: all 0.3s ease;
+  }
+  
+  .explore-menu-text:hover {
+    color: #333;
+    font-weight: 400; /* Makes text a little bolder on hover */
+  }
+  
+  .explore-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin: 30px 0;
+    overflow-x: auto; /* Horizontal scrolling */
+    padding-bottom: 15px; /* Padding for better scroll visibility */
+  }
+  
+  .explore-menu-list::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+  
+  .explore-menu-list-item {
+    flex-shrink: 0; /* Prevents items from shrinking */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .explore-menu-list-item img {
+    width: 10vw; /* Increased size for better visibility */
+    min-width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .explore-menu-list-item img:hover {
+    transform: scale(1.15); /* Slightly bigger on hover for emphasis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  }
+  
+  .explore-menu-list-item p {
+    margin-top: 12px;
+    color: #747474;
+    font-size: max(1.6vw, 16px);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .explore-menu-list-item p:hover {
+    color: rgb(7, 112, 39); /* Green color on hover */
+  }
+  
+  .explore-menu hr {
+    margin: 20px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+  }
+  
+  .explore-menu-list-item .active {
+    border: 4px solid tomato;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 1050px) {
+    .explore-menu h1 {
+      font-size: 2.5rem; /* Adjust font size for medium screens */
+    }
+  
+    .explore-menu-text {
+      max-width: 90%;
+      font-size: 1.1rem; /* Adjust font size */
+    }
+  
+    .explore-menu-list {
+      gap: 25px; /* Reduced gap for smaller screens */
+    }
+  
+    .explore-menu-list-item img {
+      width: 14vw; /* Adjust size for smaller screens */
+    }
+  
+    .explore-menu-list-item p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .explore-menu h1 {
+      font-size: 2.2rem; /* Adjust heading for smaller screens */
+    }
+  
+    .explore-menu-text {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .explore-menu-list {
+      gap: 20px; /* Smaller gap for mobile */
+    }
+  
+    .explore-menu-list-item img {
+      width: 18vw; /* Adjust for very small screens */
+    }
+  
+    .explore-menu-list-item p {
+      font-size: 13px; /* Smaller font size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .explore-menu h1 {
+      font-size: 1.8rem; /* Adjust font size for very small screens */
+    }
+  
+    .explore-menu-text {
+      font-size: 0.9rem; /* Further reduce font size */
+    }
+  
+    .explore-menu-list {
+      flex-direction: column; /* Stack items vertically */
+      gap: 15px; /* Smaller gap */
+    }
+  
+    .explore-menu-list-item img {
+      width: 30vw; /* Further adjust for mobile screens */
+    }
+  
+    .explore-menu-list-item p {
+      font-size: 12px; /* Further reduce text size */
+    }
+  }
+  
